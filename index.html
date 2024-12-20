@@ -73,6 +73,45 @@
         footer a:hover {
             color: #fff;
         }
+
+        /* Spezielle Stile für den Artikel */
+        .article-title {
+            font-size: 2rem;
+            color: #b00;
+            margin-bottom: 1rem;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .publish-time {
+            font-size: 0.9rem;
+            color: #777;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .read-more-button {
+            background-color: #b00;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .read-more-button:hover {
+            background-color: #900;
+        }
     </style>
 </head>
 <body>
@@ -92,8 +131,30 @@
 
     <!-- Main Content -->
     <main>
-        <h2>Aktuelle Nachrichten</h2>
-        <p>Hier kannst du die neuesten News anzeigen lassen...</p>
+        <h2 class="article-title">Wortgefecht eskaliert!</h2>
+        <div class="article-content">
+            <p>Es war 1:30 Uhr nachts des 1. Dezembers, und der Schnee fiel in dichten Flocken auf die Straßen von Los Santos. Die eisige Stille der Nacht wurde abrupt gestört, als zwei verfeindete Gangs, die Lost MC und die Surenos 13, vor dem Medical Department aufeinandertrafen. Die Spannung zwischen den Gruppen war greifbar, und die frostige Luft schien zu knistern vor unausgesprochener Wut.</p>
+            
+            <p>Nach einem kurzen, hitzigen Wortgefecht eskalierte die Situation. Jemand zog eine Waffe, und binnen Sekunden füllten Schüsse die Nacht. Kugeln zischten durch die kalte Luft, prallten von Metall ab und schlugen in die umliegenden Gebäude ein. Die Mitglieder der Lost MC duckten sich hinter ihre Motorräder, während sie mit gezogenen Waffen das Feuer erwiderten. Auf der anderen Seite der Straße verschanzten sich die Surenos 13 hinter parkenden Autos, ihre blauen Farben im matten Licht der Straßenlaternen sichtbar, während sie zurückschossen.</p>
+            
+            <p>Der Schnee, der zuvor die Straßen in unschuldiges Weiß gehüllt hatte, wurde bald von aufspritzendem Blut und herabfallenden Patronenhülsen befleckt. Schreie und das Echo von Schüssen hallten zwischen den Gebäuden wider. Der frostige Boden war übersät mit zerbrochenem Glas und verstreutem Chaos, als die beiden Gruppen sich erbittert bekämpften.</p>
+            
+            <p>Nur wenige Meter entfernt parkte ein Streifenwagen des Los Santos Police Department, seine Lichter ausgeschaltet, fast unbemerkt im Schneetreiben. Zwei Polizisten standen daneben, ihre Silhouetten in der Dunkelheit kaum zu erkennen. Sie beobachteten das Gemetzel regungslos, ihre Hände tief in die Taschen ihrer Winterjacken gesteckt. Kein Funkspruch, keine Verstärkung – nur stumme Beobachtung.</p>
+            
+            <p>Nach einigen Minuten ließ das Feuergefecht nach. Die Überlebenden der Surenos zogen sich hastig zurück, während ein paar Mitglieder der Lost MC blutend und schwer verletzt in den Schnee sanken. Die Straße vor dem MD war ein Bild des Chaos, und dennoch unternahm die Polizei nichts. Die Beamten stiegen schließlich in ihren Wagen, starteten den Motor und fuhren langsam davon, als wären sie nie dort gewesen.</p>
+            
+            <p>Der Schnee fiel weiter und bedeckte die blutige Szene, während die ersten Rettungswagen eintrafen. In Los Santos war es eine Nacht wie jede andere – kalt, gnadenlos und ohne Gerechtigkeit.</p>
+        </div>
+
+        <!-- Veröffentlichungszeitpunkt -->
+        <div class="publish-time">
+            Veröffentlicht am 02.12.2024 um 17:56 Uhr
+        </div>
+
+        <!-- Button für weitere Informationen -->
+        <a href="https://docs.google.com/document/d/10CzbW1W9EKje5beof6bGL8spPPSZSZo7-9zmEOTvT68/edit?tab=t.0">
+            <button class="read-more-button">Weitere Details</button>
+        </a>
     </main>
 
     <!-- Footer -->
