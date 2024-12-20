@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impressum von Weazel News - ModernV">
+    <title>Impressum - Weazel News</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #b00;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #900;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        main {
+            margin: 2rem auto;
+            max-width: 900px;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #b00; /* Rot für Ränge */
+        }
+
+        /* Schimmereffekt für den Titel */
+        .shimmer-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                to right, 
+                #b00 20%, 
+                #fff 40%, 
+                #b00 60%, 
+                #fff 80%, 
+                #b00 100%
+            );
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: shimmer 3s infinite linear;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% center;
+            }
+            100% {
+                background-position: 0 center;
+            }
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Weazel News</h1>
+        <p class="shimmer-text">Impressum</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="mitarbeiter.html">Mitarbeiter</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Impressum</h2>
+        <div class="contact-info">
+            <p><strong>Firma:</strong> Weazel News</p>
+            <p><strong>Adresse:</strong> Los Santos, Little Seoul, Lindsay Circus, 8144</p>
+            <p><strong>Geschäftsführer:</strong> Paulano Karazho</p>
+            <p><strong>Email:</strong> impressum@weazelnews.com</p>
+            <p><strong>Telefon:</strong> +1 (555) 123-4567</p>
+            <p><strong>Haftungsausschluss:</strong> Alle Inhalte auf dieser Website sind rein fiktiv und gehören zu einem Rollenspiel-Server. Jegliche Ähnlichkeiten mit realen Personen oder Organisationen sind rein zufällig.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Weazel News - ModernV | Designed von <a href="#">BlackSh4rk</a></p>
+    </footer>
+</body>
+</html>
