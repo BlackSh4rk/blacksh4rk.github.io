@@ -52,40 +52,31 @@
         h2 {
             margin-bottom: 2rem;
             font-size: 2rem;
-        }
-
-        /* Schimmereffekt */
-        .shimmer-text {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            background-image: linear-gradient(
-                to right, 
-                #b00 20%, 
-                #fff 40%, 
-                #b00 60%, 
-                #fff 80%, 
-                #b00 100%
-            );
-            background-size: 200% auto;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            animation: shimmer 3s infinite linear;
-        }
-
-        @keyframes shimmer {
-            0% {
-                background-position: 200% center;
-            }
-            100% {
-                background-position: 0 center;
-            }
+            color: #b00; /* Rot für Ränge */
         }
 
         /* Mitarbeiter-Struktur */
         .person {
             margin: 1.5rem 0;
+        }
+
+        .person p {
+            color: #b00; /* Rot für Namen und Ränge */
+        }
+
+        .person .name {
+            font-size: 1.2rem; /* Kleinere Schriftgröße für Namen */
+        }
+
+        .person .rank {
+            font-size: 1.5rem; /* Größere Schriftgröße für Ränge */
+            font-weight: bold;
+        }
+
+        .level {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .person img {
@@ -95,12 +86,6 @@
             border-radius: 50%;
             object-fit: cover;
             margin: 0.5rem 0;
-        }
-
-        .level {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
         }
 
         footer {
@@ -124,7 +109,7 @@
     <!-- Header -->
     <header>
         <h1>Weazel News</h1>
-        <p class="shimmer-text">Unsere Mitarbeiter</p>
+        <p>Unsere Mitarbeiter</p>
     </header>
 
     <!-- Navigation -->
@@ -136,20 +121,23 @@
 
     <!-- Main Content -->
     <main>
-        <h2 class="shimmer-text">Geschäftsführer</h2>
+        <h2>Geschäftsführer</h2>
         <div class="person">
-            <p class="shimmer-text">Paulano Karazho</p>
+            <p class="rank">Geschäftsführer</p>
+            <p class="name">Paulano Karazho</p>
             <img src="images/mann.jpg" alt="Paulano Karazho">
         </div>
 
-        <h2 class="shimmer-text">Stellvertretende Geschäftsführer</h2>
+        <h2>Stellvertretende Geschäftsführer</h2>
         <div class="level">
             <div class="person">
-                <p class="shimmer-text">Leon Boschinski</p>
+                <p class="rank">Stellvertretender Geschäftsführer</p>
+                <p class="name">Leon Boschinski</p>
                 <img src="images/mann.jpg" alt="Leon Boschinski">
             </div>
             <div class="person">
-                <p class="shimmer-text">Seth Karazho</p>
+                <p class="rank">Stellvertretender Geschäftsführer</p>
+                <p class="name">Seth Karazho</p>
                 <img src="images/mann.jpg" alt="Seth Karazho">
             </div>
         </div>
