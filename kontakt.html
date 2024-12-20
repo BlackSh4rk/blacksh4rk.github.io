@@ -75,6 +75,35 @@
             color: #555;
         }
 
+        /* Schimmereffekt für den Titel */
+        .shimmer-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                to right, 
+                #b00 20%, 
+                #fff 40%, 
+                #b00 60%, 
+                #fff 80%, 
+                #b00 100%
+            );
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: shimmer 3s infinite linear;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% center;
+            }
+            100% {
+                background-position: 0 center;
+            }
+        }
+
         footer {
             background-color: #222;
             color: #fff;
@@ -96,7 +125,7 @@
     <!-- Header -->
     <header>
         <h1>Weazel News</h1>
-        <p>Kontaktaufnahme</p>
+        <p class="shimmer-text">Kontaktaufnahme</p>
     </header>
 
     <!-- Navigation -->
